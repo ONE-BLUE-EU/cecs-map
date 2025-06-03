@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<title>NORMAN/SOLUTIONS Database Systems</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Web Fonts -->
+	<link rel="stylesheet" type="text/css" href="assets/css/font.css">
+
+	<!-- CSS Global Compulsory -->
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- CSS Header and Footer -->
+	<link rel="stylesheet" href="assets/css/headers/header-default.css">
+	<link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+
+	<!-- CSS Implementing Plugins -->
+	<link rel="stylesheet" href="assets/plugins/animate.css">
+	<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+	<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+	<!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
+
+	<!-- CSS Theme -->
+	<link rel="stylesheet" href="assets/css/theme-colors/default.css">
+	<link rel="stylesheet" href="assets/css/theme-colors/blue.css" id="style_color">
+
+	<!-- CSS DataTables -->
+	<link rel="stylesheet" href="assets/css/jquery.dataTables.css">
+	<link rel="stylesheet" href="assets/css/buttons.dataTables.min.css">
+
+	<!-- CSS Customization -->
+	<link rel="stylesheet" href="assets/css/custom.css">
+
+	<!-- JS Select 2 -->
+	<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+	<!--=== Header ===-->
+	<div class="header">
+		<div class="container">
+
+			<!-- Logo -->
+			<a class="logo" href="index.php">
+				<img src="assets/img/logo-solutions.jpg" alt="Logo" style="height: 40px">
+			</a>
+			<!-- End Logo -->
+			<!-- Topbar -->
+			<div class="topbar">
+				<ul class="loginbar pull-right">
+					<li><i class="fa fa-globe"></i> <a href="index.php">Solutions Knowledge Base</a></li>
+					<li class="topbar-devider"></li>
+					<li><i class="fa fa-home"></i> <a href="norman.php">Home</a></li>
+					<li class="topbar-devider"></li>
+					<li><i class="fa fa-sign-in"></i> <a href="login.php">Login</a></li>
+				</ul>
+			</div>
+			<!-- End Topbar -->
+
+			<!-- Toggle get grouped for better mobile display -->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="fa fa-bars"></span>
+			</button>
+			<!-- End Toggle -->
+		</div><!--/end container-->
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+			<div class="container">					
+				<ul class="nav navbar-nav">
+					<!-- List of Databases -->
+					<li class="dropdown">
+						<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Environmental Monitoring</a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-submenu">
+								<a href="chemicalSearch.php">Physico-chemical &amp; Chemical Data &nbsp;</a>
+								<ul class="dropdown-menu">
+									<li><a href="chemicalSearch.php">Search</a></li>
+									<li><a href="chemicalStatistics.php">Statistics</a></li>
+									<li><a href="chemicalCustomised.php">Customised statistics</a></li>
+									<li><a href="chemicalExportFull.php">Export [Full]</a></li>
+									<li class="dropdown-submenu">
+										<a href="chemicalAdminArea.php">Admin Area &nbsp;</a>
+										<ul class="dropdown-menu">
+											<li><a href="chemicalList.php">List of Uploaded Files</a></li>
+											<li><a href="chemicalSearchSetting.php">Search Setting</a></li>
+										</ul>
+									</li>
+								</ul>	
+							</li>
+							<li><a href="bioassaySearch.php">Bioassays Monitoring Data</a></li>
+							<li><a href="passiveSearch.php">Passive Sampling</a></li>
+							<li><a href="http://www.norman-data.eu/" target="dsfp">Digital Sample Freezing Platform</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="https://www.normandata.eu/empodat/ecotoxV17" target="ecotox">Ecotoxicology</a>
+					</li>
+					<li>
+						<a href="susdatSearch.php">Structure &amp; Properties</a>
+					</li>
+					<!-- End List of Databases -->
+				</ul>
+			</div><!--/end container-->
+		</div><!--/navbar-collapse-->
+	</div>
+	<!--=== End Header ===-->	
+
+	<!--=== Breadcrumbs ===-->
+	<div class="breadcrumbs">
+		<div class="container">
+			<h1 class="pull-left">User Identification Form (Log-in Page)</h1>
+		</div>
+	</div>
+	<!--=== End Breadcrumbs ===-->
+	<!--=== Content ===-->
+	<div class="container content height-500">
+<!--<div class="headline"><h2>User Identification Form (Log-in Page)</h2></div>-->
+
+<p>New users of the database must first register and open an account. Please press the button "Register" if you do not have a user name and password. A notification e-mail will be sent to you after successful registration.</p>
+
+<p>If you have lost your password, please use the link "Forgot password?". A new password will be generated and you will receive a notification e-mail.</p>
+
+<p>Users from organisations which are not members of the NORMAN Association will have limited access to the databases in terms of exporting and downloading full sets of data and QA/QC information. Access to single data is, however, enabled for all users.</p>
+
+<p>For more information about NORMAN and how to become a member of the Association, please visit the <b><a href="http://www.norman-network.net">norman-network.net</a></b> site.<br>If you encounter any problems with log-in, please contact the NORMAN development team at <b><a href="mailto:norman@ei.sk">norman@ei.sk</a></b>.</p>		
+
+
+<div class="col-md-4 col-sm-6">
+	<form action="#" class="sky-form" method="post">
+		<input type="hidden" name="PHPSESSID" value="ut6jiuqj8ukkfah03nklv1ta25">
+		<header></header>
+		<fieldset>
+			<section>
+				<div class="row">
+					<label class="input">
+						<i class="icon-append fa fa-user"></i> <input type="text" placeholder="username" name="username" required>
+					</label>
+				</div>
+			</section>
+			<section>
+				<div class="row">
+					<label class="input">
+						<i class="icon-append fa fa-lock"></i> <input type="password" placeholder="password" name="passwd" required>
+					</label>
+					<div class="note"><a href="forgot.php" class="modal-opener" data-toggle="modal" data-target="#modalForgot">Forgot password?</a></div>
+				</div>
+			</section>
+		</fieldset>
+		<footer>
+			<button type="submit" class="btn-u">Log in</button>
+			<a href="account.php" class="btn-u btn-u-default">Register</a>
+		</footer>
+	</form>
+</div>
+
+<div class="modal fade in" id="modalForgot" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel4">Forgot password? - UNDER CONSTRUCTION</h4>
+			</div>
+			<div class="modal-body">
+				<p>The email address that you specify will be compared with the e-mail address in the database. If it is found, a new password will be sent to that e-mail address. If the search fails, the system will generate the following error message: "Incorrect e-mail address!".</p>
+				<p>If the e-mail address that you specify does not agree with the database (i.e. you do not remember the e-mail address in the database), contact us at <b><a href="mailto:norman@ei.sk">norman@ei.sk</a></b> or <b><a href="mailto:ei@ei.sk">ei@ei.sk</a></b>. The system administrator will manually check and authenticate your request and send you your new password as soon as possible.</p>
+
+				<form action="#" class="sky-form" method="post">
+					<fieldset>
+						<section>
+							<div class="row">
+								<label class="input">
+									<i class="icon-append fa fa-user"></i> <input type="text" placeholder="Please enter your e-mail address" name="username" required>
+								</label>
+							</div>
+						</section>
+					</fieldset>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn-u btn-u-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn-u btn-u-default">Get new password</button>
+			</div>
+		</div>
+	</div>
+</div>	</div>
+	<!--=== End Content ===-->
+
+	<!--=== Footer Version 1 ===-->
+	<div class="footer-v1">
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<p>2018 &copy; All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div><!--/copyright-->
+	</div>
+	<!--=== End Footer Version 1 ===-->
+</div>
+
+<!-- JS Global Compulsory -->
+<!--<script src="assets/plugins/jquery/jquery.min.js"></script>-->
+<script src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+<script src="assets/plugins/back-to-top.js"></script>
+<script src="assets/plugins/smoothScroll.js"></script>
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.maskedinput.min.js"></script>
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script>
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+<!-- JS DataTables -->
+<script src="assets/js/jquery.dataTables.min.js"></script>
+<!--<script src="assets/js/dataTables.fixedHeader.min.js"></script>-->
+<!--<script src="assets/js/dataTables.responsive.min.js"></script>-->
+<!--<script src="assets/js/dataTables.bootstrap.min.js"></script>-->
+
+<!-- JS Customization -->
+<script src="assets/js/jquery.blockUI.js"></script>
+<script src="assets/js/jquery.redirect.js"></script>
+<script src="assets/js/custom.js"></script>
+<!-- JS Page Level -->
+<script src="assets/js/app.js"></script>
+<script src="assets/js/plugins/style-switcher.js"></script>
+<script src="assets/js/plugins/masking.js"></script>
+<script src="assets/js/plugins/datepicker.js"></script>
+<script src="assets/js/plugins/validation.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		App.init();
+		Masking.initMasking();
+		Datepicker.initDatepicker();
+		Validation.initValidation();
+		StyleSwitcher.initStyleSwitcher();
+	});
+</script>
+<!--[if lt IE 9]>
+	<script src="assets/plugins/respond.js"></script>
+	<script src="assets/plugins/html5shiv.js"></script>
+	<script src="assets/plugins/placeholder-IE-fixes.js"></script>
+	<script src="assets/plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
+<![endif]-->
+<!--[if lt IE 10]>
+	<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
+<![endif]-->
+</body>
+</html>
